@@ -1,0 +1,25 @@
+<!--header-local.html-->
+
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Use the `title` variable to set the title of the page-->
+    <title>{{ .title }}</title>
+
+    <!--Use bootstrap to make the application look nice-->
+    <link rel="stylesheet" href="/templates/static/css/bootstrap.min.css" >
+
+<!--
+    <script async src="/templates/static/js/bootstrap.min.js"></script>
+-->
+
+</head>
+
+<body class="container">
+<!--Embed the menu.html template at this location-->
+{{ template "menu.html" . }}
